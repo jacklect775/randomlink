@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Button Click Random Link</title>
+    <style>
+        /* CSS cho button */
+        .random-button {
+            background-color: #3498db;
+            color: #fff;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button class="random-button" onclick="randomLink()">Click Me!</button>
+
+    <script>
+        function randomLink() {
+            // Danh sách các liên kết
+            var links = [
+                "http://example1.com",
+                "http://example2.com",
+                "http://example3.com"
+            ];
+
+            // Chọn ngẫu nhiên một liên kết từ danh sách
+            var randomIndex = Math.floor(Math.random() * links.length);
+            var randomLink = links[randomIndex];
+
+            // Chuyển đến liên kết ngẫu nhiên trong tab mới
+            window.open(randomLink, "_blank");
+        }
+    </script>
+</body>
+</html>
