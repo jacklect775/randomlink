@@ -3,55 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #f4f4f4;
-    }
-
-    button {
-      padding: 15px 30px;
-      font-size: 18px;
-      cursor: pointer;
-      background-color: #3498db;
-      color: #fff;
-      border: none;
-      border-radius: 40px;
-      transition: background-color 0.3s ease, border-radius 0.3s ease;
-    }
-
-    button:hover {
-      background-color: #2980b9;
-      border-radius: 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
   <title>Random Link Button</title>
 </head>
 <body>
 
 <button id="randomButton">Click me for a random link</button>
 
-<script>
-  document.getElementById('randomButton').addEventListener('click', function() {
-    // Mảng chứa các đường link bạn muốn chuyển hướng đến
-    var links = [
-      'https://www.example.com/page1',
-      'https://www.example.com/page2',
-      'https://www.example.com/page3',
-      // Thêm các đường link khác nếu cần
-    ];
-
-    // Chọn ngẫu nhiên một số từ 0 đến độ dài của mảng links
-    var randomIndex = Math.floor(Math.random() * links.length);
-
-    // Chuyển hướng đến đường link đã chọn mở trong tab mới
-    window.open(links[randomIndex], '_blank');
-  });
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
