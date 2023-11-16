@@ -1,0 +1,24 @@
+body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      cursor: pointer;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 40px;
+      transition: background-color 0.3s ease, border-radius 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+      border-radius: 20px;
+    }
